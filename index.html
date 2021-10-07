@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Dice Game</title>
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            height: 100%;
+            width: 100%;
+            background-color:rgb(19, 77, 143);
+            color: #fff;
+            margin: 0;
+        }
+        .container{
+            margin: 100px auto;
+            width: 90%;
+        }
+        .wrapper{
+            width: 100%;
+        }
+        .title-wrapper h1{
+            text-align: center;
+        }
+        .play-button-wrapper{
+            text-align: center;
+        }
+        .play-button-wrapper button{
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: orange;
+            transition: all 300ms;
+            border-radius: 5px;
+            border: none;
+        }
+        .play-button-wrapper button:hover{
+            background-color: orangered;
+        }
+        .dice-images-wrapper{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 100px 0;
+        }
+        .dice-images-wrapper .left-side,
+        .dice-images-wrapper .right-side{
+            width: 50%;
+            text-align: center;
+        }
+        .results-wrapper{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title-wrapper">
+                <h1>Roll the dice, get the winner!</h1>
+            </div>
+            <div class="play-button-wrapper">
+                <button>Roll the Dices</button>
+            </div>
+            <div class="dice-images-wrapper">
+                <div class="left-side">
+                    <img src="./images/dice1.png">
+                </div>
+                <div class="right-side">
+                    <img src="./images/dice2.png">
+                </div>
+            </div>
+            <div class="results-wrapper">
+                <p>Left side is the winner, Sorry, you lost, right side.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
